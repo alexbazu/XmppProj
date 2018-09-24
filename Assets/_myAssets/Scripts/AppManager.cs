@@ -17,6 +17,8 @@ public class AppManager : MonoBehaviour
     private InputField usernameText;
     [SerializeField]
     private InputField passwordText;
+    [SerializeField]
+    private InputField domainText;
     private string licenseFilename = "license.txt";
     public List<RosterItem> buddyList = new List<RosterItem>();
     private FriendListManager friendListManager;
@@ -49,7 +51,7 @@ public class AppManager : MonoBehaviour
         mainUser = new XmppClient();
 
         mainUser.SetUsername(usernameText.text);
-        mainUser.SetXmppDomain("localhost");
+        mainUser.SetXmppDomain(domainText.text);
         mainUser.Password = passwordText.text;
         mainUser.Status = "I am online!";
         mainUser.Show = Matrix.Xmpp.Show.Chat;
