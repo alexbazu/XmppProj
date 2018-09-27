@@ -1,0 +1,11 @@
+INSTRUCTIONS:
+- Download and install OpenFire
+- Add plugins to OpenFire
+	- User Creation (to easily add users in batches)
+- Go to http://localhost:9090/plugins/usercreation/users-creation.jsp
+- Create a batch of users (Ex: User prefix: user; From index: 0; Total users: 20; Contacts in roster: 5) (this will create 20 users, each of them will have 5 buddies)
+- Set user passwords (User Summary -> select user -> Password)(You will need to set the password for 2 users only for chat) 
+- Launch app
+- Fill in credentials (user, password, domain) (for testing purpose you can use 'localhost' as domain)
+- Log in
+- Select a buddy to start chatting
